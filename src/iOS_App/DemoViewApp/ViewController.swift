@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         mv.map!.operationalLayers.add(AGSFeatureLayer(featureTable: claremontTable))
     }
     
+    
     func setupLocationDisplay() {
         mv.locationDisplay.autoPanMode = AGSLocationDisplayAutoPanMode.compassNavigation
         mv.locationDisplay.start { [weak self] (error:Error?) -> Void in
